@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="question(0)">
+
+    <h1>Quiz App</h1> 
+<div style="display: flex;">
+    <span style="width:95%;">
+        <p id="allQuestion"></p>
+    </span>
+
+    <p id="timer">00</p>
+</div>
+  
+
+    <div>
+
+        <div class="quesdiv">
+            <p id="question"></p>
+        </div>
+
+        <div class="optiondiv">
+            <p class="options" onclick="select(this)"></p>
+            <p class="options" onclick="select(this)"></p>
+            <p class="options" onclick="select(this)"></p>
+            <p class="options" onclick="select(this)"></p>
+        </div>
+
+        <input id="nextbtn" type="button" value="Next Question">
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
